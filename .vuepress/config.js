@@ -5,7 +5,6 @@ module.exports = {
   // "title": "我的",
   // "description": "我的博肯,喜欢技术操作,分享起来了!!!",
   "dest": "public",
-  "base": "./",
   "head": [
     [
       "link",
