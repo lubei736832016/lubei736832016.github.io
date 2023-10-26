@@ -1,37 +1,52 @@
 let plugins = [
-    //打赏 信息
-    ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
-        title: '公告',
-        body: [
-            {
-                type: 'title',
-                content: '欢迎加我的VX 🎉🎉🎉',
-                style: 'text-aligin: center;',
-            },
-            {
-                type: 'text',
-                content: 'VX:15662777207',
-                style: 'text-align: center;'
-            },
-            {
-                type: 'text',
-                content: '喜欢的主题特效可以去个人信息',
-                style: 'text-align: center;'
-            },
-            {
-                type: 'text',
-                content: '友链或疑问均可在留言板给我留言',
-                style: 'text-align: center;'
-            }
-        ],
-        // footer: [
-        //   {
-        //     type: 'button',
-        //     text: '打赏',
-        //     link: '/blog/donate'
-        //   },
-        // ]
+    // url转换英文
+    ['vuepress-plugin-clean-urls', {
+        normalSuffix: '/',
+        indexSuffix: '/',
+        notFoundPath: '/404.html',
+        cleanURLs: {
+            normalSuffix: '/',
+            indexSuffix: '/'
+        }
     }],
+    // url转换英文
+    ['permalink-pinyin', {
+        lowercase: true, // Converted into lowercase, default: true
+        separator: '-' // Separator of the slug, default: '-'
+    }],
+    //打赏 信息
+    // ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
+    //     title: '公告',
+    //     body: [
+    //         {
+    //             type: 'title',
+    //             content: '欢迎加我的VX 🎉🎉🎉',
+    //             style: 'text-aligin: center;',
+    //         },
+    //         {
+    //             type: 'text',
+    //             content: 'VX:15662777207',
+    //             style: 'text-align: center;'
+    //         },
+    //         {
+    //             type: 'text',
+    //             content: '喜欢的主题特效可以去个人信息',
+    //             style: 'text-align: center;'
+    //         },
+    //         {
+    //             type: 'text',
+    //             content: '友链或疑问均可在留言板给我留言',
+    //             style: 'text-align: center;'
+    //         }
+    //     ],
+    //     // footer: [
+    //     //   {
+    //     //     type: 'button',
+    //     //     text: '打赏',
+    //     //     link: '/blog/donate'
+    //     //   },
+    //     // ]
+    // }],
     // 看板娘
     ['@vuepress-reco/vuepress-plugin-kan-ban-niang', {
         theme: ['koharu', 'whiteCat', 'haru1', 'haru2', 'haruto', 'blackCat', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],

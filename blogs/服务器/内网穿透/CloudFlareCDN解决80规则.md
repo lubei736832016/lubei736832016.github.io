@@ -1,0 +1,72 @@
+---
+title: CloudFlareCDN解决80规则
+date: 2019-09-21
+tags:
+ - 内网穿透
+categories:
+ - server服务器
+---
+<Boxx/>
+
+# CloudFlare 免费CDN  解决80规则
+
+## 1- 准备条件
+
+1. 有 公网ip 自己的  (运营商的 家里的宽带 适用)
+2. 有自己的服务器 (自己的服务器可以用机顶盒等 刷机 ---可参考 我的刷机教程)
+3. 80  443 端口不能用 
+4. cloudflare  账号   
+5. cloudflare  地址    https://dash.cloudflare.com/e9c835b7ca3451fe9378960a168d432a
+6. 有自己的域名 (阿里云,腾讯云 都可以 或者 直接注册的也可以)
+
+## 2-CloudFlare 准备
+
+进入  CloudFlare  官网 注册好后   找到 网站右上角的  添加站点
+
+![1.png][1]
+
+点击之后 输入 你想要添加的 顶级域名 
+
+进入下一个 页面后 选择套餐 规则 
+
+![2.png][2]
+
+
+
+然后按着 下一步 提示继续
+
+![3.png][3]
+
+最重要的点 就是  修改 你的运营商的 dns 服务器  (注意 需要等待  大约 8分钟左右 ) 你可以使用 腾讯云查看工具 刷新查看 等到 dns 服务商 换成 CloudFlare 就好了
+
+## 3-开启ssl证书
+
+![1695865401451.png][4]
+
+![1695865424441.png][5]
+
+![1695865449039.png][6]
+
+1. 获取 好边缘证书  证书是 cloudFlare 官网给的 可以自动免费续订 时间期限 三个月 
+2. 开启上面的 https 等加密选择
+
+## 4-把你的网站由http 部署成 https
+
+1. 前提条件 你已经有 可以通过 端口访问的  网站了 (确保能访问才行)
+2. 比如 http://xxxx.com:89可以访问 
+3. 前提 是你的 这个 使用的域名 也需要在 阿里云 或者 腾讯 解析到了你原来的地址 然后把你的 域名填写上去
+4. 选择 cname 主机模式 
+5. 你的服务是多少 端口 下面就重写到多少端口
+6. 最后的你的服务就可以 访问了
+
+![4.png][7]
+
+
+  [1]: https://www.luaiwcr.top/usr/uploads/2023/09/349013502.png
+  [2]: https://www.luaiwcr.top/usr/uploads/2023/09/3545911090.png
+  [3]: https://www.luaiwcr.top/usr/uploads/2023/09/3766927884.png
+  [4]: https://www.luaiwcr.top/usr/uploads/2023/09/200537848.png
+  [5]: https://www.luaiwcr.top/usr/uploads/2023/09/776932982.png
+  [6]: https://www.luaiwcr.top/usr/uploads/2023/09/1543217533.png
+  [7]: https://www.luaiwcr.top/usr/uploads/2023/09/998541036.png
+  

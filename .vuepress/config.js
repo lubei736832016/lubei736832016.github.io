@@ -21,7 +21,7 @@ module.exports = {
       }
     ]
   ],
-  "theme": "reco",//jabinblog
+  "theme": "jabinblog",// reco
 
   "themeConfig": {
     "mode": 'dark', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式

@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: WLCR - BLOG
-tagline: 感谢你来到我的博客，我希望你在这里找到有价值的内容，并享受与我和其他读者的互动
+tagline: 感谢你来到我的博客，我希望你在这里找到有价值的内容
 heroImageStyle: {
   maxWidth: '600px',
   width: '100%',
@@ -31,7 +31,7 @@ features:
 <!-- 样式 style -->
 <style>
   /* css 实现 点击向下 效果 */
-.anchor-down {
+/* .anchor-down {
   display: block;
   margin: 12rem auto 0;
   bottom: 45px;
@@ -72,12 +72,13 @@ features:
   border-right: 3px solid #fff;
   border-top: 3px solid #fff;
   transform: rotate(135deg);
-}
+} */
 /* css 实现 点击向下 效果 */
 
 
 /* css 边框渐变 效果 */
-.abstract-item {
+
+/* .abstract-item {
   background: none;
   border: 0;
   box-sizing: border-box;
@@ -107,11 +108,12 @@ features:
   border: 2px solid transparent;
   width: 0;
   height: 0;
-}
+} */
 /* 基础的配置 */
 
 /*渐变 */
-.draw::before {
+
+/* .draw::before {
   top: 0;
   left: 0;
 }
@@ -141,9 +143,10 @@ features:
   border-bottom-color: #60daaa;
   border-left-color: #60daaa;
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-}
+} */
+
 /* 双向渐变 */
-.meet:hover {
+/* .meet:hover {
   color: #fbca67;
 }
 .meet::after {
@@ -158,9 +161,10 @@ features:
   border-bottom-color: #fbca67;
   border-left-color: #fbca67;
   transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
-}
+} */
 /* 中心渐变 */
-.center:hover {
+
+/* .center:hover {
   color: #6477b9;
 }
 .center::before, .center::after {
@@ -189,48 +193,48 @@ features:
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
   transition: transform 0.5s, -webkit-transform 0.5s;
-}
+} */
 </style>
 
 <script>
 export default {
   mounted () {
-    // 首页的点击滚动到博客的部分
-    const ifJanchor = document.getElementById("JanchorDown"); 
-    ifJanchor && ifJanchor.parentNode.removeChild(ifJanchor);
-    let a = document.createElement('a');
-    a.id = 'JanchorDown';
-    a.className = 'anchor-down';
-    document.getElementsByClassName('hero')[0].append(a);
-    let targetA = document.getElementById("JanchorDown");
-    targetA.addEventListener('click', e => { // 添加点击事件
-      this.scrollFn();
-    })
+    // // 首页的点击滚动到博客的部分
+    // const ifJanchor = document.getElementById("JanchorDown"); 
+    // ifJanchor && ifJanchor.parentNode.removeChild(ifJanchor);
+    // let a = document.createElement('a');
+    // a.id = 'JanchorDown';
+    // a.className = 'anchor-down';
+    // document.getElementsByClassName('hero')[0].append(a);
+    // let targetA = document.getElementById("JanchorDown");
+    // targetA.addEventListener('click', e => { // 添加点击事件
+    //   this.scrollFn();
+    // })
 
-    // 实现完成 css 动态渐变效果
-    // 获取类名为 .abstract-item 的所有元素
-    var abstractItems = document.querySelectorAll('.abstract-item');
-    // 随机的颜色渐变
-    var classlist = ['draw','draw','center']
-    // 遍历每个元素并添加 .mett 类名
-    abstractItems.forEach(function(item) {
-      // 0-2的随机数
-      let randomNumber = Math.floor(Math.random() * 3);
-      if(randomNumber==1){
-        item.classList.add(classlist[randomNumber]);
-        item.classList.add('meet');
-      }else{
-        item.classList.add(classlist[randomNumber]);
-      }
-    })
+    // // 实现完成 css 动态渐变效果
+    // // 获取类名为 .abstract-item 的所有元素
+    // var abstractItems = document.querySelectorAll('.abstract-item');
+    // // 随机的颜色渐变
+    // var classlist = ['draw','draw','center']
+    // // 遍历每个元素并添加 .mett 类名
+    // abstractItems.forEach(function(item) {
+    //   // 0-2的随机数
+    //   let randomNumber = Math.floor(Math.random() * 3);
+    //   if(randomNumber==1){
+    //     item.classList.add(classlist[randomNumber]);
+    //     item.classList.add('meet');
+    //   }else{
+    //     item.classList.add(classlist[randomNumber]);
+    //   }
+    // })
   },
 
   methods: {
     // 首页的点击滚动到博客的部分
-    scrollFn() {
-      const windowH = document.getElementsByClassName('hero')[0].clientHeight; // 获取窗口高度
-      document.documentElement.scrollTop = windowH; // 滚动条滚动到指定位置
-    }
+    // scrollFn() {
+    //   const windowH = document.getElementsByClassName('hero')[0].clientHeight; // 获取窗口高度
+    //   document.documentElement.scrollTop = windowH; // 滚动条滚动到指定位置
+    // }
   }
 }
 </script>
