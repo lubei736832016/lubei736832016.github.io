@@ -1,4 +1,47 @@
 let plugins = [
+    // 这个是 博客的覆盖面 插件
+    [
+        '@noxone/vuepress-plugin-cover',
+        {
+            // bgImg: 'https://xxx', // pc端横屏背景图，默认不显示背景图片，若您想的话可以传入图片url（为了与文字百搭，默认显示纯色背景，因为找合适的配图太困难了＞﹏＜）
+            // bgImgMobile: 'https://xxx', // 移动端竖屏背景图
+            bgColor: '#333', // pc端背景底色
+            bgColorMobile: '#333', // 移动端背景底色
+            main: [ // 文案数组，默认每次会随机展示一个文案
+                {
+                    content: [
+                        '我想，',
+                        '在这个世界上,',
+                        '虽然没有最美好的相遇，',
+                        '但却应该有为了相遇或重逢，',
+                        '所做的最美好的努力。',
+                        `title:—— 勒 · 克莱齐奥 《流浪的星星》` // 'title:' 作为标题标记
+                    ]
+                    // bgImg
+                    // bgImgMobile
+                    // bgColor
+                    // bgColorMobile
+                },
+                // { ... } 下一个文案 
+            ],
+            pixels: 'px', // 字体像素单位 
+            fontSize: 36, // 字体36px 
+            fontWeight: 500, // 自己猜 
+            fontColor: '#fff', // 自己猜 
+            fontAlign: 'center', // 自己猜 
+            textBorderColor: '#000', // 字体边框色 
+            textBorderSize: '1px', // 字体边框大小 
+            writingMode: 'horizontal-tb', // 书写模式，可选值：vertical-lr | vertical-rl | horizontal-tb 
+            typeSpeed: 100, // 打字速度 
+            isAutoClose: false, // 打字结束自动关闭，默认需要点击后关闭 
+            nextTip: 'NEXT >', // 下一步提示文字（将作为v-html传入，意味着您也可以传入一个标签，例如<img style="width:200;height:200" src="https://xxx">） 
+            skipTip: 'SKIP >', // 跳过提示文字（也是作为v-html传入） 
+            closeAnimation: 'text-blur-out', // 关闭淡出动画类 
+            isShowMeteors: true, // 打字结束显示流星 
+            fontFamily: '云峰静龙行.ttf', // 字体，内置了三种：三极行楷简体-粗.ttf | 云峰寒蝉体.ttf | 云峰静龙行.ttf，你也可以添加，在项目的assets/fonts文件夹下添加ttf格式的字体文件即可
+            isShowOnce: false, // 默认每次刷新当前页面始终显示cover组件，若您不想的话可以设置true
+        }
+    ],
     // url转换英文
     // ['vuepress-plugin-clean-urls', {
     //     normalSuffix: '/',
@@ -100,6 +143,7 @@ let plugins = [
                     url: "/song/qsbjr.mp3",
                     //封面图片
                     cover: "/mofang.jpg",
+                    loop: true
                 },
                 //网络歌曲
                 // {

@@ -30,6 +30,7 @@ features:
 ---
 <!-- 样式 style -->
 <style>
+  
   /* css 实现 点击向下 效果 */
 /* .anchor-down {
   display: block;
@@ -199,6 +200,7 @@ features:
 <script>
 export default {
   mounted () {
+    bgm.loop=true// 设置 audio  音乐 循环播放
     // document.getElementsByClassName("hero")[0].style.backgroundImage=`url(/hero.png)`
     // // 首页的点击滚动到博客的部分
     // const ifJanchor = document.getElementById("JanchorDown"); 

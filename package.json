@@ -25,6 +25,7 @@
   "dependencies": {
     "@anyfork/vuepress-plugin-loading-page": "^0.1.1",
     "@nines/vuepress-plugin-loading-page": "^0.0.5",
+    "@noxone/vuepress-plugin-cover": "^1.0.3",
     "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.6.16",
     "@vuepress-reco/vuepress-plugin-loading-page": "^1.4.0",
     "gatsby-plugin-emoji-cursor": "^1.0.2",
