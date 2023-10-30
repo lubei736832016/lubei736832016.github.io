@@ -1,0 +1,29 @@
+{
+  "name": "@anyfork/vuepress-plugin-loading-page",
+  "version": "0.1.1",
+  "description": "vuepress plugin loading page for vuepress v1.x",
+  "main": "index.js",
+  "files": [
+    "bin"
+  ],
+  "license": "MIT",
+  "author": "anyfork",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "@anyfork/vuepress-plugin-loading-page",
+    "vuepress",
+    "plugin",
+    "vuepress-plugin-loading-page",
+    "loading page"
+  ],
+  "homepage": "https://github.com/AnyFork/vuepress-plugin-1.x/issues",
+  "bugs": {
+    "url": "https://github.com/AnyFork/vuepress-plugin-1.x/issues/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnyFork/vuepress-plugin-1.x/issues"
+  }
+}
