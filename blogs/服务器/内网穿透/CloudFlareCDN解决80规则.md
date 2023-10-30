@@ -1,8 +1,8 @@
 ---
-title: CloudFlareCDN解决80规则
+title: CloudFlare解决80映射
 date: 2019-09-21
 tags:
- - InternalNetworkPenetration
+ - InterNetPenetration
 categories:
  - server
 ---
