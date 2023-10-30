@@ -31,7 +31,7 @@ module.exports = {
       "appId": '3FF9Q5qERdqFuqkwRPIfS9Yt-gzGzoHsz',// your appId
       "appKey": 'sCtVGgoLCRzhArNfgXdwi5YN', // your appKey
     },
-    "subSidebar": 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
+    // "subSidebar": 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
     "nav": [
       {
         "text": "WLCR-博客主页",

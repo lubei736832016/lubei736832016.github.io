@@ -199,6 +199,7 @@ features:
 <script>
 export default {
   mounted () {
+    // document.getElementsByClassName("hero")[0].style.backgroundImage=`url(/hero.png)`
     // // 首页的点击滚动到博客的部分
     // const ifJanchor = document.getElementById("JanchorDown"); 
     // ifJanchor && ifJanchor.parentNode.removeChild(ifJanchor);

@@ -1,19 +1,19 @@
 let plugins = [
     // url转换英文
-    ['vuepress-plugin-clean-urls', {
-        normalSuffix: '/',
-        indexSuffix: '/',
-        notFoundPath: '/404.html',
-        cleanURLs: {
-            normalSuffix: '/',
-            indexSuffix: '/'
-        }
-    }],
-    // url转换英文
-    ['permalink-pinyin', {
-        lowercase: true, // Converted into lowercase, default: true
-        separator: '-' // Separator of the slug, default: '-'
-    }],
+    // ['vuepress-plugin-clean-urls', {
+    //     normalSuffix: '/',
+    //     indexSuffix: '/',
+    //     notFoundPath: '/404.html',
+    //     cleanURLs: {
+    //         normalSuffix: '/',
+    //         indexSuffix: '/'
+    //     }
+    // }],
+    // // url转换英文
+    // ['permalink-pinyin', {
+    //     lowercase: true, // Converted into lowercase, default: true
+    //     separator: '-' // Separator of the slug, default: '-'
+    // }],
     //打赏 信息
     // ['@vuepress-reco/vuepress-plugin-bulletin-popover', {
     //     title: '公告',
