@@ -2,9 +2,9 @@
 title: CloudFlareCDN解决80规则
 date: 2019-09-21
 tags:
- - 内网穿透
+ - InternalNetworkPenetration
 categories:
- - server服务器
+ - server
 ---
 <Boxx/>
 

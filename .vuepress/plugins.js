@@ -90,29 +90,29 @@ let plugins = [
         "@vuepress-reco/vuepress-plugin-bgm-player",
         {
             audios: [
-                //本地歌曲
-                // {
-                //   //名字
-                //   name: "我从人间走过",
-                //   //作者
-                //   artist: "瞳荧/十八薰",
-                //   //地址
-                //   url: "/wcjrzg.m4a",
-                //   //封面图片
-                //   cover: "/wcrjzg.png",
-                // },
-                //网络歌曲
+                // 本地歌曲
                 {
                     //名字
-                    name: "LOSER",
+                    name: "其实都没有",
                     //作者
-                    artist: "米津玄師",
+                    artist: "于冬然",
                     //地址
-                    url: "http://music.163.com/song/media/outer/url?id=447925558.mp3",
+                    url: "/song/qsbjr.mp3",
                     //封面图片
-                    cover:
-                        "https://p1.music.126.net/qTSIZ27qiFvRoKj-P30BiA==/109951165895951287.jpg?param=200y200",
+                    cover: "/mofang.jpg",
                 },
+                //网络歌曲
+                // {
+                //     //名字
+                //     name: "LOSER",
+                //     //作者
+                //     artist: "米津玄師",
+                //     //地址
+                //     url: "http://music.163.com/song/media/outer/url?id=447925558.mp3",
+                //     //封面图片
+                //     cover:
+                //         "https://p1.music.126.net/qTSIZ27qiFvRoKj-P30BiA==/109951165895951287.jpg?param=200y200",
+                // },
             ],
             // 是否默认缩小
             autoShrink: true,
