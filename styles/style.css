@@ -1,5 +1,5 @@
-@import url(/css/fonts.googleapis.com_css_family=Lato&display=swap.css);
-@import url(/css/cdnjs.cloudflare.com_ajax_libs_font-awesome_5.10.2_css_all.min.css);
+@import url(https://blog.wcrlayue.top/onlinedata/css/fonts.googleapis.com_css_family=Lato&display=swap.css);
+@import url(https://blog.wcrlayue.top/onlinedata/css/cdnjs.cloudflare.com_ajax_libs_font-awesome_5.10.2_css_all.min.css);
 
 .medium-zoom-overlay {
     z-index: 100
@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: NOXONE_GLOBAL_FONT;
-    src: url(/font/Alimama_DongFangDaKai_Regular.woff) format("woff"), url(/font/Alimama_DongFangDaKai_Regular.woff2) format("woff"), url(/font/Alimama_DongFangDaKai_Regular.ttf) format("truetype")
+    src: url(https://blog.wcrlayue.top/onlinedata/font/Alimama_DongFangDaKai_Regular.woff) format("woff"), url(https://blog.wcrlayue.top/onlinedata/font/Alimama_DongFangDaKai_Regular.woff2) format("woff"), url(https://blog.wcrlayue.top/onlinedata/font/Alimama_DongFangDaKai_Regular.ttf) format("truetype")
 }
 
 * {
@@ -32,7 +32,7 @@
 }
 
 body {
-    cursor: url(/font/default.cur), auto
+    cursor: url(https://blog.wcrlayue.top/onlinedata/font/default.cur), auto
 }
 
 .hover:hover,
@@ -44,9 +44,9 @@ i,
 input,
 .title,
 .abstract-item {
-    cursor: url(/font/select.cur), auto !important
+    cursor: url(https://blog.wcrlayue.top/onlinedata/font/select.cur), auto !important
 }
 
 input:focus {
-    cursor: url(/font/text.cur), auto !important
+    cursor: url(https://blog.wcrlayue.top/onlinedata/font/text.cur), auto !important
 }
