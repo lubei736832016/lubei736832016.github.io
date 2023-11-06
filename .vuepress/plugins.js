@@ -4,7 +4,7 @@ let plugins = [
         '@noxone/vuepress-plugin-cover',
         {
             // bgImg: 'https://xxx', // pc端横屏背景图，默认不显示背景图片，若您想的话可以传入图片url（为了与文字百搭，默认显示纯色背景，因为找合适的配图太困难了＞﹏＜）
-            bgImgMobile: 'https://blog.wcrlayue.top/onlinedata/img/mofang.jpg', // 移动端竖屏背景图
+            bgImgMobile: '/img/mofang.jpg', // 移动端竖屏背景图
             bgColor: '#333', // pc端背景底色
             bgColorMobile: '#333', // 移动端背景底色
             main: [ // 文案数组，默认每次会随机展示一个文案
@@ -112,14 +112,14 @@ let plugins = [
         }
     }],
     //鼠标点击
-    // [
-    //     'cursor-effects',
-    //     {
-    //         size: 2, // size of the particle, default: 2
-    //         shape: 'star', // shape of the particle, default: 'star'
-    //         zIndex: 999999999, // z-index property of the canvas, default: 999999999
-    //     },
-    // ],
+    [
+        'cursor-effects',
+        {
+            size: 2, // size of the particle, default: 2
+            shape: 'star', // shape of the particle, default: 'star'
+            zIndex: 999999999, // z-index property of the canvas, default: 999999999
+        },
+    ],
     //动态标题
     ['dynamic-title', {
         showIcon: "/favicon.ico",
@@ -140,9 +140,9 @@ let plugins = [
                     //作者
                     artist: "于冬然",
                     //地址
-                    url: "https://blog.wcrlayue.top/onlinedata/font/text.cur/song/qsbjr.mp3",
+                    url: "/song/qsbjr.mp3",
                     //封面图片
-                    cover: "https://blog.wcrlayue.top/onlinedata/img/mofang.jpg",
+                    cover: "/img/mofang.jpg",
                     loop: true
                 },
                 //网络歌曲
@@ -170,40 +170,40 @@ let plugins = [
     //悬挂猫
     ['go-top'],
     //丝带背景
-    // ["ribbon-animation", {
-    //     size: 90,   // 默认数据
-    //     opacity: 0.3,  //  透明度
-    //     zIndex: -1,   //  层级
-    //     opt: {
-    //         // 色带HSL饱和度
-    //         colorSaturation: "80%",
-    //         // 色带HSL亮度量
-    //         colorBrightness: "60%",
-    //         // 带状颜色不透明度
-    //         colorAlpha: 0.65,
-    //         // 在HSL颜色空间中循环显示颜色的速度有多快
-    //         colorCycleSpeed: 6,
-    //         // 从哪一侧开始Y轴 (top|min, middle|center, bottom|max, random)
-    //         verticalPosition: "center",
-    //         // 到达屏幕另一侧的速度有多快
-    //         horizontalSpeed: 200,
-    //         // 在任何给定时间，屏幕上会保留多少条带
-    //         ribbonCount: 2,
-    //         // 添加笔划以及色带填充颜色
-    //         strokeSize: 0,
-    //         // 通过页面滚动上的因子垂直移动色带
-    //         parallaxAmount: -0.5,
-    //         // 随着时间的推移，为每个功能区添加动画效果
-    //         animateSections: true
-    //     },
-    //     ribbonShow: false, //  点击彩带  true显示  false为不显示
-    //     ribbonAnimationShow: true  // 滑动彩带
-    // }],
+    ["ribbon-animation", {
+        size: 90,   // 默认数据
+        opacity: 0.3,  //  透明度
+        zIndex: -1,   //  层级
+        opt: {
+            // 色带HSL饱和度
+            colorSaturation: "80%",
+            // 色带HSL亮度量
+            colorBrightness: "60%",
+            // 带状颜色不透明度
+            colorAlpha: 0.65,
+            // 在HSL颜色空间中循环显示颜色的速度有多快
+            colorCycleSpeed: 6,
+            // 从哪一侧开始Y轴 (top|min, middle|center, bottom|max, random)
+            verticalPosition: "center",
+            // 到达屏幕另一侧的速度有多快
+            horizontalSpeed: 200,
+            // 在任何给定时间，屏幕上会保留多少条带
+            ribbonCount: 2,
+            // 添加笔划以及色带填充颜色
+            strokeSize: 0,
+            // 通过页面滚动上的因子垂直移动色带
+            parallaxAmount: -0.5,
+            // 随着时间的推移，为每个功能区添加动画效果
+            animateSections: true
+        },
+        ribbonShow: false, //  点击彩带  true显示  false为不显示
+        ribbonAnimationShow: true  // 滑动彩带
+    }],
     //随机的名人民谚
     ["vuepress-plugin-boxx"],
     //加载动画
-    // ["@nines/vuepress-plugin-loading-page"],
-    // ['@vuepress-reco/loading-page'],
+    ["@nines/vuepress-plugin-loading-page"],
+    ['@vuepress-reco/loading-page'],
     //文章的目录
     ["vuepress-plugin-auto-sidebar"]
 ]
