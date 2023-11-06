@@ -140,9 +140,9 @@ let plugins = [
                     //作者
                     artist: "于冬然",
                     //地址
-                    url: "/song/qsbjr.mp3",
+                    url: "https://blog.wcrlayue.top/onlinedata/song/qsbjr.mp3",
                     //封面图片
-                    cover: "/img/mofang.jpg",
+                    cover: "https://blog.wcrlayue.top/onlinedata/img/mofang.jpg",
                     loop: true
                 },
                 //网络歌曲
