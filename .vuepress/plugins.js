@@ -4,7 +4,7 @@ let plugins = [
         '@noxone/vuepress-plugin-cover',
         {
             // bgImg: 'https://xxx', // pc端横屏背景图，默认不显示背景图片，若您想的话可以传入图片url（为了与文字百搭，默认显示纯色背景，因为找合适的配图太困难了＞﹏＜）
-            // bgImgMobile: 'https://xxx', // 移动端竖屏背景图
+            bgImgMobile: 'https://blog.wcrlayue.top/onlinedata/img/mofang.jpg', // 移动端竖屏背景图
             bgColor: '#333', // pc端背景底色
             bgColorMobile: '#333', // 移动端背景底色
             main: [ // 文案数组，默认每次会随机展示一个文案
