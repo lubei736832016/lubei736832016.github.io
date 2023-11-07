@@ -1,0 +1,59 @@
+@import url(https://blog.wcrlayue.top/onlinedata/css/fonts.googleapis.com_css_family=Lato&display=swap.css);
+@import url(https://blog.wcrlayue.top/onlinedata/css/cdnjs.cloudflare.com_ajax_libs_font-awesome_5.10.2_css_all.min.css);
+
+
+@media screen and (max-width: 768px) {
+    #noxone-cover{
+        display: none !important;
+    }
+}
+
+.medium-zoom-overlay {
+    z-index: 100
+}
+
+.medium-zoom-overlay~img {
+    z-index: 101
+}
+
+@font-face {
+    font-family: NOXONE_GLOBAL_FONT;
+    src: url(/font/Alimama_DongFangDaKai_Regular.woff) format("woff"), url(/font/Alimama_DongFangDaKai_Regular.woff2) format("woff"), url(/font/Alimama_DongFangDaKai_Regular.ttf) format("truetype")
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.abstract-wrapper,
+.home-blog,
+.info-wrapper,
+.noxone-music,
+.NoxoneLive2D,
+.tags {
+    font-family: NOXONE_GLOBAL_FONT
+}
+
+.search-box {
+    font-family: none
+}
+
+body {
+    cursor: url(https://blog.wcrlayue.top/onlinedata/font/default.cur), auto
+}
+
+.hover:hover,
+.social-item,
+.tags span,
+a,
+button,
+i,
+input,
+.title,
+.abstract-item {
+    cursor: url(https://blog.wcrlayue.top/onlinedata/font/select.cur), auto !important
+}
+
+input:focus {
+    cursor: url(https://blog.wcrlayue.top/onlinedata/font/text.cur), auto !important
+}
