@@ -1,1 +1,30 @@
+name: Deploy to Baota
 
+on:
+  push:
+    branches:
+      - main  # 或者您的默认分支
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Baota
+        run: |
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${{ secrets.BAOTA_API_KEY }}" \
+            -d '{"domain": "www.wcrlayue.top:10086", "path": "/www/wwwroot/www.wcr.top/", "source_path": "public"}' \
+            https://www.wcrlayue.top:8089/lu7368
