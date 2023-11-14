@@ -26,5 +26,5 @@ jobs:
           curl -X POST \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ${{ secrets.BAOTA_API_KEY }}" \
-            -d '{"domain": "www.wcrlayue.top:10086", "path": "/www/wwwroot/www.wcr.top/", "source_path": "public"}' \
+            -d '{"domain": "www.wcrlayue.top:10086", "path": "/www/wwwroot/www.wcr.top/", "source_path": "dist"}' \
             https://www.wcrlayue.top:8089/lu7368
