@@ -6,17 +6,14 @@ on:
       - main  # 或者您的默认分支
 
 jobs:
-  deploy:
+  build-and-deploy:
+    # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 16.13.0
+          node-version: '16.13.0' # 指定所需的 Node.js 版本
           
       - name: Build
         run: npm run build
