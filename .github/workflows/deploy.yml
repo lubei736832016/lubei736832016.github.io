@@ -35,6 +35,6 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           #password: ${{ secrets.REMOTE_PASSWORD }}
           #port: ${{ secrets.REMOTE_PORT }}
-          source: ./public
+          entryPoint: ./public
           target: /www/wwwroot/myVuepressblog/
           args: -rltgoDzvO
