@@ -28,5 +28,5 @@ jobs:
           server: ${{ secrets.SERVER }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          local_path: ./dist
+          local_path: ./public
           server_path: /www/wwwroot/myVuepressblog/
