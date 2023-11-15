@@ -30,11 +30,11 @@ jobs:
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2
         with:
-          key: ${{secrets.SSH_PRIVATE_KEY}}
-          host: ${{secrets.REMOTE_HOST}}
-          username: ${{secrets.REMOTE_USER}}
-          #password: ${{secrets.REMOTE_PASSWORD}}
-          #port: ${{secrets.REMOTE_PORT}}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          #password: ${{ secrets.REMOTE_PASSWORD }}
+          #port: ${{ secrets.REMOTE_PORT }}
           source: ./public
           target: /www/wwwroot/myVuepressblog/
           args: -rltgoDzvO
