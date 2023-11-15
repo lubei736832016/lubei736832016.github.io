@@ -35,5 +35,5 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           #password: ${{ secrets.REMOTE_PASSWORD }}
           #port: ${{ secrets.REMOTE_PORT }}
-          entryPoint: rsync -az --delete ./public/ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/www/wwwroot/myVuepressblog/
+          entryPoint: rsync -az --delete ./public/ $${{ secrets.REMOTE_USER }}@$${{ secrets.REMOTE_HOST }}:/www/wwwroot/myVuepressblog/
           args: -rltgoDzvO
