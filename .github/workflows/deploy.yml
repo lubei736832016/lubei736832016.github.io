@@ -30,8 +30,10 @@ jobs:
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2
         with:
-          server: ${{ secrets.SERVER }}
+          key: ${{ secrets.GITEE_RSA_PRIVATE_KEY}}
+          host: ${{ secrets.SERVER }}
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          local_path: ./public
-          server_path: /www/wwwroot/myVuepressblog/
+          port: ${{ secrets.PORT }}
+          source: ./public
+          target: /www/wwwroot/myVuepressblog/
+          args: -rltgoDzvO
