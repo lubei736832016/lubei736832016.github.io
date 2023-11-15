@@ -26,9 +26,9 @@ jobs:
 
       - name: Build
         run: npm run build
-
+       #easingthemes/ssh-deploy@v2
       - name: Deploy to Server
-        uses: easingthemes/ssh-deploy@v2
+        uses: appleboy/ssh-action@master
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           host: ${{ secrets.REMOTE_HOST }}
