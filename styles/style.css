@@ -3,7 +3,7 @@
 
 /* 修改 手机端不要 背景图这次 使用媒体查询 直接超出 自适应 */
 @media screen and (max-width: 768px) {
-    #noxone-cover{
+    #noxone-cover,.global-ui{
         display: none !important;
     }
     body{
