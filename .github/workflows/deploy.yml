@@ -19,10 +19,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '16'
-       
-      # 安装依赖
-      - name: npm install 
-        run: npm install 
+            #添加权限
+      - name: Restore permissions of node_modules
+        run: chmod -R +x node_modules
       
       #打包项目
       - name: Build
