@@ -2,11 +2,11 @@
 @import url(https://blog.wcrlayue.top/onlinedata/css/cdnjs.cloudflare.com_ajax_libs_font-awesome_5.10.2_css_all.min.css);
 
 
-@media screen and (max-width: 768px) {
-    #noxone-cover{
+/* @media screen and (max-width: 768px) {
+    #noxone-cover {
         display: none !important;
     }
-} 
+}  */
 
 .medium-zoom-overlay {
     z-index: 100
