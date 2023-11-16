@@ -1,27 +1,46 @@
-name: Deploy to Baota
+name: Deploy My Server
 
 on:
   push:
     branches:
-      - main  # 或者您的默认分支
-
+      - main # 只在master上push触发部署
+      
 jobs:
-  build-and-deploy:
-    # 服务器环境：最新版 Ubuntu
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16.13.0' # 指定所需的 Node.js 版本
-          
-      - name: Build
-        run: npm run build
+  deploy:
+    runs-on: ubuntu-latest # 使用ubuntu系统镜像运行自动化脚本
 
-      - name: Deploy to Baota
-        run: |
-          curl -X POST \
-            -H "Content-Type: application/json" \
-            -H "Authorization: Bearer ${{ secrets.BAOTA_API_KEY }}" \
-            -d '{"domain": "www.wcrlayue.top:10086", "path": "/www/wwwroot/www.wcr.top/", "source_path": "dist"}' \
-            https://www.wcrlayue.top:8089/lu7368
+    steps: # 自动化步骤
+    
+      #下载代码仓库
+      - uses: actions/checkout@v1 
+      
+      # 使用action库，安装node
+      - name: use Node.js  # 使用action库  actions/setup-node安装node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16'
+            #添加权限
+      - name: Restore permissions of node_modules
+        run: chmod -R +x node_modules
+      
+      #打包项目
+      - name: Build
+        run: npm run build 
+
+      #部署到服务器
+      - name: Deploy to Staging My server
+        uses: easingthemes/ssh-deploy@v2.1.6
+        env:
+          #私钥
+          SSH_PRIVATE_KEY: ${{ secrets.MY_SERVER_PRIVATE_KEY }} #后面指定为该仓库配置的私钥
+          ARGS: "-rltgoDzvO"
+          # 源目录，编译后生成的文件目录
+          SOURCE: '/public/'
+          #服务器公网地址
+          REMOTE_HOST: '112.229.219.149'
+          #服务器用户名-一般默认root
+          REMOTE_USER: 'root'
+          #服务器中，代码部署的位置
+          TARGET: '/www/wwwroot/myVuepressblog/'
+          #去除的文件
+          EXCLUDE: "/dist/, /node_modules/" 
