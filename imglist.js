@@ -8,6 +8,9 @@ let arr = [
     { title: '机顶盒搭建家庭服务器', name: 'https://lubeilubei.gitee.io/giteeupload/img/jidinghe.jpg' },
     { title: 'Localyunnel内网穿透', name: 'https://lubeilubei.gitee.io/giteeupload/img/neiwang1.jpg' },
     { title: 'Natapp内网穿透使用', name: 'https://lubeilubei.gitee.io/giteeupload/img/neiwang2.jpg' },
-    { title: 'Node定时解析Cloudflare', name: 'https://lubeilubei.gitee.io/giteeupload/img/nodeclour.jpg'}
+    { title: 'Node定时解析Cloudflare', name: 'https://lubeilubei.gitee.io/giteeupload/img/nodeclour.jpg'},
+    { title: 'github-action部署到linux', name: 'https://lubeilubei.gitee.io/giteeupload/img/github.jpg'},
+    { title: 'github-action部署page', name: 'https://lubeilubei.gitee.io/giteeupload/img/github.jpg'},
+    { title: 'github-git强制更新giteepage', name: 'https://lubeilubei.gitee.io/giteeupload/img/github.jpg'}
 ]
 module.exports = arr
