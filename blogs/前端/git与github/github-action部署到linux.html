@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>github-action部署到linux</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/styles/style.css">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.91229954.css" as="style"><link rel="preload" href="/assets/js/app.48b76e03.js" as="script"><link rel="preload" href="/assets/js/3.b7c5674a.js" as="script"><link rel="preload" href="/assets/js/1.f3a5562c.js" as="script"><link rel="preload" href="/assets/js/16.d727c7c7.js" as="script"><link rel="prefetch" href="/assets/js/10.1c0918d5.js"><link rel="prefetch" href="/assets/js/11.ea87125f.js"><link rel="prefetch" href="/assets/js/12.6859a350.js"><link rel="prefetch" href="/assets/js/13.9cc5b36a.js"><link rel="prefetch" href="/assets/js/14.4ad321e4.js"><link rel="prefetch" href="/assets/js/15.caea2440.js"><link rel="prefetch" href="/assets/js/17.888d5958.js"><link rel="prefetch" href="/assets/js/18.dbe9bfc5.js"><link rel="prefetch" href="/assets/js/19.46bb6edf.js"><link rel="prefetch" href="/assets/js/20.8c0fe9d1.js"><link rel="prefetch" href="/assets/js/21.a7ba2299.js"><link rel="prefetch" href="/assets/js/22.3c118943.js"><link rel="prefetch" href="/assets/js/23.117834e0.js"><link rel="prefetch" href="/assets/js/24.605202ec.js"><link rel="prefetch" href="/assets/js/25.c349064f.js"><link rel="prefetch" href="/assets/js/26.3aecd340.js"><link rel="prefetch" href="/assets/js/27.3e4f8834.js"><link rel="prefetch" href="/assets/js/28.094d8a5f.js"><link rel="prefetch" href="/assets/js/4.6d49fefe.js"><link rel="prefetch" href="/assets/js/5.035cc727.js"><link rel="prefetch" href="/assets/js/6.8f943a5d.js"><link rel="prefetch" href="/assets/js/7.a5f3c19b.js"><link rel="prefetch" href="/assets/js/8.b0348abd.js"><link rel="prefetch" href="/assets/js/9.f0c12b16.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.91229954.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-7a6c954e><div data-v-7a6c954e><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-7a6c954e data-v-7a6c954e><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-548f7490 data-v-7a6c954e data-v-7a6c954e><h3 class="title" style="display:none;" data-v-548f7490 data-v-548f7490></h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-548f7490 data-v-548f7490><input type="password" value="" data-v-548f7490> <span data-v-548f7490>Konck! Knock!</span> <button data-v-548f7490>OK</button></label> <div class="footer" style="display:none;" data-v-548f7490 data-v-548f7490><span data-v-548f7490><i class="iconfont reco-theme" data-v-548f7490></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-548f7490>vuePress-theme-reco</a></span> <span data-v-548f7490><i class="iconfont reco-copyright" data-v-548f7490></i> <a data-v-548f7490><span data-v-548f7490>lubei</span>
+            
+          <span data-v-548f7490>2017 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-7a6c954e><header class="navbar" data-v-7a6c954e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="" class="logo"> <!----></a> <div class="links"><!----> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  WLCR-博客主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      WLCR-自然探索
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/github-git/" class="nav-link"><i class="iconfont undefined"></i>
+  github-git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Node/" class="nav-link"><i class="iconfont undefined"></i>
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/npm/" class="nav-link"><i class="iconfont undefined"></i>
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/server/" class="nav-link"><i class="iconfont undefined"></i>
+  server
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  WLCR-清风徜徉
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间链-流转
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      WLCR-文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/javascript/javascript1.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript现代文档
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      WLCR-外联
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7a6c954e></div> <aside class="sidebar" data-v-7a6c954e><div class="personal-info-wrapper" data-v-ec2c9702 data-v-7a6c954e><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-ec2c9702> <h3 class="name" data-v-ec2c9702>
+    lubei
+  </h3> <div class="num" data-v-ec2c9702><div data-v-ec2c9702><h3 data-v-ec2c9702>12</h3> <h6 data-v-ec2c9702>Article</h6></div> <div data-v-ec2c9702><h3 data-v-ec2c9702>8</h3> <h6 data-v-ec2c9702>Tag</h6></div></div> <hr data-v-ec2c9702></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  WLCR-博客主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      WLCR-自然探索
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/Nginx/" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/categories/github-git/" class="nav-link"><i class="iconfont undefined"></i>
+  github-git
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Node/" class="nav-link"><i class="iconfont undefined"></i>
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/npm/" class="nav-link"><i class="iconfont undefined"></i>
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/categories/server/" class="nav-link"><i class="iconfont undefined"></i>
+  server
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  WLCR-清风徜徉
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间链-流转
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      WLCR-文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/javascript/javascript1.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript现代文档
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      WLCR-外联
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>git与github</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/前端/git与github/github-action部署page.html" class="sidebar-link">github-action部署page</a></li><li><a href="/blogs/前端/git与github/github-action部署到linux.html" class="active sidebar-link">github-action部署到linux</a></li><li><a href="/blogs/前端/git与github/github-git强制更新giteepage.html" class="sidebar-link">github-git强制更新giteepage</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-548f7490 data-v-7a6c954e><h3 class="title" style="display:none;" data-v-548f7490 data-v-548f7490>github-action部署到linux</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-548f7490 data-v-548f7490><input type="password" value="" data-v-548f7490> <span data-v-548f7490>Konck! Knock!</span> <button data-v-548f7490>OK</button></label> <div class="footer" style="display:none;" data-v-548f7490 data-v-548f7490><span data-v-548f7490><i class="iconfont reco-theme" data-v-548f7490></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-548f7490>vuePress-theme-reco</a></span> <span data-v-548f7490><i class="iconfont reco-copyright" data-v-548f7490></i> <a data-v-548f7490><span data-v-548f7490>lubei</span>
+            
+          <span data-v-548f7490>2017 - </span>
+          2023
+        </a></span></div></div> <div data-v-7a6c954e><main class="page"><div class="page-title" style="display:none;"><h1>github-action部署到linux</h1> <div data-v-01d8a6a8><i class="iconfont reco-account" data-v-01d8a6a8><span data-v-01d8a6a8>lubei</span></i> <i class="iconfont reco-date" data-v-01d8a6a8><span data-v-01d8a6a8>2019-09-21</span></i> <i class="iconfont reco-eye" data-v-01d8a6a8><span id="/blogs/%E5%89%8D%E7%AB%AF/git%E4%B8%8Egithub/github-action%E9%83%A8%E7%BD%B2%E5%88%B0linux.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-01d8a6a8><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-01d8a6a8><span class="tag-item" data-v-01d8a6a8>github git action</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><div id="boxx" data-v-f4ca0dac><div data-v-f4ca0dac><p v-if="true" class="custom-block-title" data-v-f4ca0dac></p> <p v-if="true" data-v-f4ca0dac></p></div></div> <h3 id="_1-准备工作"><a href="#_1-准备工作" class="header-anchor">#</a> 1-准备工作</h3> <blockquote><p>1.需要你有一个 服务器 linux</p> <p>2.需要 你注册有github 的账户</p> <p>3.下载rsync在服务器上</p> <p>​			 yum install rsync
+​			<em>#or</em>
+​			npm install reync</p> <p>​			#or</p> <p>​			apt install rsync</p> <p>4.下载git在服务器上</p> <p>​			apt install git</p> <p>​			#or</p> <p>​			npm install git</p> <p>5.在 /root/.ssh/生成 密钥和公钥 命令是: ssh-keygen -t rsa -C &quot;your_email@youremail.com&quot;  完事后一路enter(按回车键盘)</p></blockquote> <p><img src="https://lubeilubei.gitee.io/giteeupload/assets/1700211043320.png" alt="1700211043320"></p> <blockquote><p>6.把你的私钥 复制添加到github 里面去添加到 下面的图示   secrets.MY_SERVER_PRIVATE_KEY 名字是这个</p></blockquote> <p><img src="https://lubeilubei.gitee.io/giteeupload/assets/1697781092409.png" alt=""></p> <h3 id="_2-设置允许的私钥访问"><a href="#_2-设置允许的私钥访问" class="header-anchor">#</a> 2-设置允许的私钥访问</h3> <blockquote><p>把生成的 公钥 复制到 同目录的 authorized_keys 里面去</p> <p>把私钥设置为 项目的 secrets 里面的action 的变量 让 github 通过 私钥访问 linux</p></blockquote> <h3 id="_3-创建yml文件"><a href="#_3-创建yml文件" class="header-anchor">#</a> 3-创建yml文件</h3> <blockquote><p>.github/workflows/deploy.yml 比如</p></blockquote> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy My Server
+
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> main <span class="token comment"># 只在master上push触发部署</span>
+      
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">deploy</span><span class="token punctuation">:</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest <span class="token comment"># 使用ubuntu系统镜像运行自动化脚本</span>
+
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span> <span class="token comment"># 自动化步骤</span>
+    
+      <span class="token comment">#下载代码仓库</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v1 
+      
+      <span class="token comment"># 使用action库，安装node</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> use Node.js  <span class="token comment"># 使用action库  actions/setup-node安装node</span>
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">'16'</span>
+            <span class="token comment">#添加权限</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Restore permissions of node_modules
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> chmod <span class="token punctuation">-</span>R +x node_modules
+      <span class="token comment">#依赖下载  注意我这里 我做博客的时候 因为我改动了nodemoudels 的源码所以我上传了依赖不需要重新下载注释了 你可以根据你的来变化</span>
+      <span class="token comment">#- name: Install</span>
+      	<span class="token comment"># run: npm install</span>
+      
+      <span class="token comment">#打包项目</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Build
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build 
+
+      <span class="token comment">#部署到服务器</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy to Staging My server
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> easingthemes/ssh<span class="token punctuation">-</span>deploy@v2.1.6
+        <span class="token key atrule">env</span><span class="token punctuation">:</span>
+          <span class="token comment">#私钥</span>
+          <span class="token key atrule">SSH_PRIVATE_KEY</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.MY_SERVER_PRIVATE_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span> <span class="token comment">#后面指定为该仓库配置的私钥</span>
+          <span class="token key atrule">ARGS</span><span class="token punctuation">:</span> <span class="token string">&quot;-rltgoDzvO&quot;</span>
+          <span class="token comment"># 源目录，编译后生成的文件目录</span>
+          <span class="token key atrule">SOURCE</span><span class="token punctuation">:</span> <span class="token string">'/public/'</span>
+          <span class="token comment">#服务器公网地址</span>
+          <span class="token key atrule">REMOTE_HOST</span><span class="token punctuation">:</span> <span class="token string">'你服务器的公网地址'</span>
+          <span class="token comment">#服务器用户名-一般默认root</span>
+          <span class="token key atrule">REMOTE_USER</span><span class="token punctuation">:</span> <span class="token string">'root'</span>
+          <span class="token comment">#服务器中，代码部署的位置</span>
+          <span class="token key atrule">TARGET</span><span class="token punctuation">:</span> <span class="token string">'/www/wwwroot/myVuepressblog/'</span><span class="token comment">#你服务器要部署的服务器路径位置</span>
+          <span class="token comment">#去除的文件</span>
+          <span class="token key atrule">EXCLUDE</span><span class="token punctuation">:</span> <span class="token string">&quot;/dist/, /node_modules/&quot;</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">11/20/2023, 3:28:47 AM</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div id="noxone-cover" class="noxone-cover" style="--bg-color:#333;--bg-mobile-color:#333;--text-font-color:#fff;--text-font-size:36px;--text-line-height:54px;--text-writing-mode:horizontal-tb;--text-font-align:center;--text-border-color:#000;--text-border-size:1px;--text-box-w:autopx;--text-box-h:autopx;" data-v-048b6b88><div id="text" class="text" data-v-048b6b88></div> <div id="text-copy" class="text-copy" data-v-048b6b88>一定要爱着点什么，<br>恰似草木对光阴的钟情。<br></div> <!----> <!----> <!----> <!----></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到我的家
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="left:70px;bottom:20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div><canvas id="vuepress-canvas-cursor"></canvas><div></div><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="https://lubeilubei.gitee.io/giteeupload/song/qsbjr.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:30px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://lubeilubei.gitee.io/giteeupload/img/mofang.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://lubeilubei.gitee.io/giteeupload/img/mofang.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>其实都没有</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>于冬然</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><div id="goTop" class="hide-cat" data-v-bf92849a></div><!----><div class="RibbonAnimation"></div></div></div>
+    <script src="/assets/js/app.48b76e03.js" defer></script><script src="/assets/js/3.b7c5674a.js" defer></script><script src="/assets/js/1.f3a5562c.js" defer></script><script src="/assets/js/16.d727c7c7.js" defer></script>
+  </body>
+</html>
