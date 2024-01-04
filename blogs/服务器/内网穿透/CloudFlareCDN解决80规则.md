@@ -23,29 +23,29 @@ categories:
 
 进入  CloudFlare  官网 注册好后   找到 网站右上角的  添加站点
 
-![1.png][1]
+![](assets/1.png)
 
 点击之后 输入 你想要添加的 顶级域名 
 
 进入下一个 页面后 选择套餐 规则 
 
-![2.png][2]
+![](https://lubeilubei.gitee.io/giteeupload/assets/2.png)
 
 
 
 然后按着 下一步 提示继续
 
-![3.png][3]
+![](https://lubeilubei.gitee.io/giteeupload/assets/3.png)
 
 最重要的点 就是  修改 你的运营商的 dns 服务器  (注意 需要等待  大约 8分钟左右 ) 你可以使用 腾讯云查看工具 刷新查看 等到 dns 服务商 换成 CloudFlare 就好了
 
 ## 3-开启ssl证书
 
-![1695865401451.png][4]
+![1695865401451](https://lubeilubei.gitee.io/giteeupload/assets/1695865401451.png)
 
-![1695865424441.png][5]
+![1695865424441](https://lubeilubei.gitee.io/giteeupload/assets/1695865424441.png)
 
-![1695865449039.png][6]
+![1695865449039](https://lubeilubei.gitee.io/giteeupload/assets/1695865449039.png)
 
 1. 获取 好边缘证书  证书是 cloudFlare 官网给的 可以自动免费续订 时间期限 三个月 
 2. 开启上面的 https 等加密选择
@@ -59,14 +59,7 @@ categories:
 5. 你的服务是多少 端口 下面就重写到多少端口
 6. 最后的你的服务就可以 访问了
 
-![4.png][7]
+![](https://lubeilubei.gitee.io/giteeupload/assets/4.png)
 
+![1695866872684](https://lubeilubei.gitee.io/giteeupload/assets/1695866872684.png)
 
-  [1]: https://www.luaiwcr.top/usr/uploads/2023/09/349013502.png
-  [2]: https://www.luaiwcr.top/usr/uploads/2023/09/3545911090.png
-  [3]: https://www.luaiwcr.top/usr/uploads/2023/09/3766927884.png
-  [4]: https://www.luaiwcr.top/usr/uploads/2023/09/200537848.png
-  [5]: https://www.luaiwcr.top/usr/uploads/2023/09/776932982.png
-  [6]: https://www.luaiwcr.top/usr/uploads/2023/09/1543217533.png
-  [7]: https://www.luaiwcr.top/usr/uploads/2023/09/998541036.png
-  
