@@ -37,7 +37,7 @@ jobs:
           # 源目录，编译后生成的文件目录
           SOURCE: '/public/'
           #服务器公网地址
-          REMOTE_HOST: '112.229.219.149'
+          REMOTE_HOST: ${{secrets.MY_SERVER_HOST}}  # 服务器地址
           #服务器用户名-一般默认root
           REMOTE_USER: 'root'
           #服务器中，代码部署的位置
