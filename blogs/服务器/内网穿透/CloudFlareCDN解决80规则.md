@@ -23,7 +23,7 @@ categories:
 
 进入  CloudFlare  官网 注册好后   找到 网站右上角的  添加站点
 
-![](assets/1.png)
+![](https://lubeilubei.gitee.io/giteeupload/assets/1.png)
 
 点击之后 输入 你想要添加的 顶级域名 
 
