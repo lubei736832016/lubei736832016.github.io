@@ -1,0 +1,50 @@
+---
+title: CloudFlare需要的配置
+date: 2020-09-21
+tags:
+ - InterNetPenetration
+categories:
+ - server
+---
+<Boxx/>
+
+# CloudFlare相关配置
+
+## 1-配置注册与激活
+
+> 1. 再注册完毕后 ,只需要把 CloudFlare 提供的 服务器 dns 解析值 修改到 你域名买的服务方 (我的是阿里云)  这里修改完毕后 只要等待 不要着急 8分钟左右 等待 你的域名变成 有效的样子就可以了
+
+![1712028107404](https://lubeilubei.gitee.io/giteeupload/assets/1712028107404.png)
+
+> 2.类似于 上面这种 的服务器解析 等待首页的  你的网站的 域名下面 带有有效两个字 就可以了 这就激活成功了
+
+## 2-域名里的SSL相关配置
+
+> 1.点击SSL  点击 边缘证书  一下全部开启 就可以
+
+![1712028288153](https://lubeilubei.gitee.io/giteeupload/assets/1712028288153.png)
+
+![1712028308628](https://lubeilubei.gitee.io/giteeupload/assets/1712028308628.png)
+
+## 3-使用域名代理配置解析规则
+
+> 1.使用域名解析代理配置解析规则 可以 省去  上面我的文章的 CloudFlare 的node 动态修改 DNS值的 操作 ,也是脑子不好使 ,有域名 竟然还给这里也写ip真是愚蠢我 
+>
+> 2.点击 DNS  添加记录值  类型: CNAME  名称: 自己定义就可以列入(blog) 内容:自己的域名:就是你要解析到你公网的域名这里 你在服务商哪里 用的域名全称解析到公网就用那个 就是解析地址的那个 可能你不懂 那你就看看前面的 文章 使用cloudflare 解决80端口 
+>
+> 3 .点击添加记录值 确定
+>
+> 4.找到域名配置里的规则选项  选择菜单里的 Origin Rules 
+>
+> 5.创建规则  
+>
+> 6.配置规则 里的 名称随意  字段选择主机名  运算符选择 等于 值 看下图解释
+>
+> 最后 图上还有个 重写到 某端口 那就是你 本来带有端口的 原来的网站端口
+
+![1712028723563](https://lubeilubei.gitee.io/giteeupload/assets/1712028723563.png)
+
+![1712029000348](https://lubeilubei.gitee.io/giteeupload/assets/1712029000348.png)
+
+
+
