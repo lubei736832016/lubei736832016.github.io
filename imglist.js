@@ -11,6 +11,7 @@ let arr = [
     { title: 'Node定时解析Cloudflare', name: 'https://lubeilubei.gitee.io/giteeupload/img/nodeclour.jpg'},
     { title: 'github-action部署到linux', name: 'https://lubeilubei.gitee.io/giteeupload/img/github.jpg'},
     { title: 'github-action部署page', name: 'https://lubeilubei.gitee.io/giteeupload/img/github.jpg'},
-    { title: 'github-git强制更新giteepage', name: 'https://lubeilubei.gitee.io/giteeupload/img/github.jpg'}
+    { title: 'github-git强制更新giteepage', name: 'https://lubeilubei.gitee.io/giteeupload/img/github.jpg'},
+    { title: 'CloudFlare需要的配置', name: 'https://lubeilubei.gitee.io/giteeupload/img/cloudflare.jpg'}
 ]
 module.exports = arr
