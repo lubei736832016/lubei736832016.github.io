@@ -122,9 +122,9 @@ let plugins = [
                     //作者
                     artist: "于冬然",
                     //地址
-                    url: "https://lubeilubei.gitee.io/giteeupload/song/qsbjr.mp3",
+                    url: "./song/qsbjr.mp3",
                     //封面图片
-                    cover: "https://lubeilubei.gitee.io/giteeupload/img/mofang.jpg",
+                    cover: "./img/mofang.jpg",
                     loop: true
                 },
                 //网络歌曲

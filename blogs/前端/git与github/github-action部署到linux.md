@@ -34,11 +34,11 @@ categories:
 >
 > 5.在 /root/.ssh/生成 密钥和公钥 命令是: ssh-keygen -t rsa -C "your_email@youremail.com"  完事后一路enter(按回车键盘)
 
-![1700211043320](https://lubeilubei.gitee.io/giteeupload/assets/1700211043320.png)
+![1700211043320](/assets/1700211043320.png)
 
 > 6.把你的私钥 复制添加到github 里面去添加到 下面的图示   secrets.MY_SERVER_PRIVATE_KEY 名字是这个
 
-![](https://lubeilubei.gitee.io/giteeupload/assets/1697781092409.png)
+![](/assets/1697781092409.png)
 
 ### 2-设置允许的私钥访问
 

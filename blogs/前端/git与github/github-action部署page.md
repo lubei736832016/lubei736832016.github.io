@@ -12,9 +12,9 @@ categories:
 
 > 登录 github 首页, 点击新建仓库  ,创建的仓库的名字 就输入  `你的GitHub用户名.github.io`  选择 开源也就是 public , 选择Add a README.md ,点击确定创建
 
-![1697773385409](https://lubeilubei.gitee.io/giteeupload/assets/1697773385409.png)
+![1697773385409](/assets/1697773385409.png)
 
-![1697773630948](https://lubeilubei.gitee.io/giteeupload/assets/1697773630948.png)
+![1697773630948](/assets/1697773630948.png)
 
 ### 2-博客与github绑定
 
@@ -22,15 +22,15 @@ categories:
 >
 > 具体指令 不说了,上传完毕后 你的博客应该就跟 仓库绑定了,这个是 action 自动部署方式,这里你仓库里上传的东西,文件应该是没有打包的那种 也是就没有执行 npm run build 那种文件 ,我下面的是随便截图不要被误导!!!
 
-![1697774036586](https://lubeilubei.gitee.io/giteeupload/assets/1697774036586.png)
+![1697774036586](/assets/1697774036586.png)
 
 ### 3-配置添加action 文件
 
 > 点击 Addfile ,然后添加 `.github/workflows/deploy-github-pages.yml`这个路径的文件 ,然后在 路径文件里面 添加下面的内容 
 
-![1697774310813](https://lubeilubei.gitee.io/giteeupload/assets/1697774310813.png)
+![1697774310813](/assets/1697774310813.png)
 
-![1697774379934](https://lubeilubei.gitee.io/giteeupload/assets/1697774379934.png)
+![1697774379934](/assets/1697774379934.png)
 
 ```yml
 # 具体的配置 如下 (请不要复制我-----)

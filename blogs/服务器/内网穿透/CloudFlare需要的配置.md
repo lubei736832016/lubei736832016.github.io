@@ -14,7 +14,7 @@ categories:
 
 > 1. 再注册完毕后 ,只需要把 CloudFlare 提供的 服务器 dns 解析值 修改到 你域名买的服务方 (我的是阿里云)  这里修改完毕后 只要等待 不要着急 8分钟左右 等待 你的域名变成 有效的样子就可以了
 
-![1712028107404](https://lubeilubei.gitee.io/giteeupload/assets/1712028107404.png)
+![1712028107404](/assets/1712028107404.png)
 
 > 2.类似于 上面这种 的服务器解析 等待首页的  你的网站的 域名下面 带有有效两个字 就可以了 这就激活成功了
 
@@ -22,9 +22,9 @@ categories:
 
 > 1.点击SSL  点击 边缘证书  一下全部开启 就可以
 
-![1712028288153](https://lubeilubei.gitee.io/giteeupload/assets/1712028288153.png)
+![1712028288153](/assets/1712028288153.png)
 
-![1712028308628](https://lubeilubei.gitee.io/giteeupload/assets/1712028308628.png)
+![1712028308628](/assets/1712028308628.png)
 
 ## 3-使用域名代理配置解析规则
 
@@ -42,9 +42,9 @@ categories:
 >
 > 最后 图上还有个 重写到 某端口 那就是你 本来带有端口的 原来的网站端口
 
-![1712028723563](https://lubeilubei.gitee.io/giteeupload/assets/1712028723563.png)
+![1712028723563](/assets/1712028723563.png)
 
-![1712029000348](https://lubeilubei.gitee.io/giteeupload/assets/1712029000348.png)
+![1712029000348](/assets/1712029000348.png)
 
 
 
