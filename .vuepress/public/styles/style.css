@@ -1,5 +1,5 @@
-@import url(css/fonts.googleapis.com_css_family=Lato&display=swap.css);
-@import url(css/cdnjs.cloudflare.com_ajax_libs_font-awesome_5.10.2_css_all.min.css);
+@import url(https://blog.awblog.asia/css/fonts.googleapis.com_css_family=Lato&display=swap.css);
+@import url(https://blog.awblog.asia/css/cdnjs.cloudflare.com_ajax_libs_font-awesome_5.10.2_css_all.min.css);
 
 /* 修改 手机端不要 背景图这次 使用媒体查询 直接超出 自适应 */
 @media screen and (max-width: 768px) {
@@ -21,7 +21,7 @@
 
 @font-face {
     font-family: NOXONE_GLOBAL_FONT;
-    src: url(font/Alimama_DongFangDaKai_Regular.woff) format("woff"), url(font/Alimama_DongFangDaKai_Regular.woff2) format("woff"), url(font/Alimama_DongFangDaKai_Regular.ttf) format("truetype")
+    src: url(https://blog.awblog.asia/font/Alimama_DongFangDaKai_Regular.woff) format("woff"), url(https://blog.awblog.asia/font/Alimama_DongFangDaKai_Regular.woff2) format("woff"), url(https://blog.awblog.asia/font/Alimama_DongFangDaKai_Regular.ttf) format("truetype")
 }
 
 * {
@@ -42,7 +42,7 @@
 }
 
 body {
-    cursor: url(font/default.cur), auto
+    cursor: url(https://blog.awblog.asia/font/default.cur), auto
 }
 
 .hover:hover,
@@ -54,9 +54,9 @@ i,
 input,
 .title,
 .abstract-item {
-    cursor: url(font/select.cur), auto !important
+    cursor: url(https://blog.awblog.asia/font/select.cur), auto !important
 }
 
 input:focus {
-    cursor: url(font/text.cur), auto !important
+    cursor: url(https://blog.awblog.asia/font/text.cur), auto !important
 }
