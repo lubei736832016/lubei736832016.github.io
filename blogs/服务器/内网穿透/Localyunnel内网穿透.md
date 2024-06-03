@@ -132,7 +132,3 @@ sudo systemctl status localtunnel
 sudo systemctl enable localtunnel
 
 现在，每次启动您的 Debian 系统时，localtunnel 应该会自动启动
-
-
-  [1]: https://www.luaiwcr.top/usr/uploads/2023/04/1845969221.jpg
-  [2]: https://www.luaiwcr.top/usr/uploads/2023/04/3402478654.jpg
