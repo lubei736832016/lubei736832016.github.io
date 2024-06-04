@@ -5,7 +5,7 @@ let arr = [
     },
     {
         "text": "Linux基础操作",
-        "link": "/docs/linux/linux1"
+        "link": "/docs/linux/linux01"
     }
 ]
 module.exports = arr
