@@ -1,6 +1,6 @@
 ---
 title: linux简单指令
-date: 2023-05-29
+date: 2023-05-04
 ---
 <Boxx/>
 # Linux基础简单指令
