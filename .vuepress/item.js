@@ -6,6 +6,10 @@ let arr = [
     {
         "text": "Linux基础操作",
         "link": "/docs/linux/linux01"
+    },
+    {
+        "text": "项目部署与环境配置",
+        "link": "/docs/projectManger/project01"
     }
 ]
 module.exports = arr
