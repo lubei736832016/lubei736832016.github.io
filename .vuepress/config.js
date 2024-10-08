@@ -1,6 +1,7 @@
 const arr = require("./item.js");
 const sidebar = require("./sidebar.js");
 const plugins = require("./plugins.js");
+const path = require('path')
 module.exports = {
   // "title": "我的",
   // "description": "我的博肯,喜欢技术操作,分享起来了!!!",
