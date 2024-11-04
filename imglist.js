@@ -12,6 +12,7 @@ let arr = [
     { title: 'github-action部署到linux', name: '/img/github.jpg'},
     { title: 'github-action部署page', name: '/img/github.jpg'},
     { title: 'github-git强制更新giteepage', name: '/img/github.jpg'},
-    { title: 'CloudFlare需要的配置', name: '/img/cloudflare1.jpg'}
+    { title: 'CloudFlare需要的配置', name: '/img/cloudflare1.jpg'},
+    { title: 'github配置令牌', name: '/img/ssh.jpg'}
 ]
 module.exports = arr
